@@ -20,6 +20,8 @@ address {
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -58,6 +60,10 @@ a {
   background: var(--accent-color);
 }
 .hero-title {
+  text-align: center;
+  background-color: tomato;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -66,9 +72,9 @@ a {
 }
 
 /* секции ===studio===*/
-.section-title.hiden {
-  visibility: hidden;
-}
+/* .section-title.hiden { */
+/* visibility: hidden; */
+/* } */
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -105,12 +111,17 @@ a {
 }
 
 /* кнопки портфолио */
-.btn-group .button:hover,
-.btn-group .button:focus {
+.button:hover,
+.button:focus {
   color: var(--accent-color);
 }
 
-.btn-group .button {
+.button {
+  border: 4px transparent;
+  text-align: center;
+  min-width: 73px;
+  display: inline-block;
+  padding: 6px 22px;
   font-family: inherit;
   border-radius: 4px;
   cursor: pointer;
@@ -119,12 +130,12 @@ a {
   line-height: 1.6;
 }
 
-.btn-group .button.current {
+.button.current {
   background-color: var(--accent-color);
   color: #ffffff;
 }
 
-/* секции ===portfolio===*/
+/* ===portfolio===*/
 .port-title {
   font-weight: 700;
   font-size: 18px;
@@ -175,7 +186,7 @@ a {
 .logo-web,
 .logo-studio {
   color: var(--accent-color);
-  font-family: Raleway;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -188,4 +199,13 @@ a {
 
 .logo-studio-foot {
   color: #ffffff;
+}
+/* Главная */
+.page-header {
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
 }
