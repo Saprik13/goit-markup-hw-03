@@ -6,6 +6,7 @@
   --primary-font: "Roboto";
   --secondary-font: "Raleway";
 }
+
 *,
 *::before,
 *::after {
@@ -18,9 +19,11 @@ body {
   font-family: var(--primary-font), sans-serif;
   background-color: #ffffff;
 }
+
 address {
   font-style: normal;
 }
+
 ul,
 ol {
   list-style: none;
@@ -41,12 +44,13 @@ p {
 a {
   text-decoration: none;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-/* =====================container==================*/
+/* ===container=== */
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -54,8 +58,14 @@ img {
   padding-right: 15px;
   width: 1200px;
 }
+/* ================================================ */
 
-/* site nav, header contacts */
+/* скрытые элементы */
+.vis-hiden {
+  display: none;
+}
+
+/* ===навигация сайта===, ===header=== */
 .nav-link,
 .contacts-header {
   color: var(--title-text-color);
@@ -69,132 +79,33 @@ img {
 .contacts-header:hover,
 .nav-link:hover,
 .contacts-header:focus,
-.button:hover,
-.button:focus,
-.contacts-footer:focus,
-.contacts-footer:hover,
 .nav-link.current {
   color: var(--accent-color);
 }
-/* hero ===studio=== */
-.hero {
-  text-align: center;
-}
-.hero-button {
-  border-radius: 4px;
-  border: var(--accent-color);
-  min-width: 200px;
-  display: inline-block;
-  padding: 10px 32px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  color: #ffffff;
-  background: var(--accent-color);
-}
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-/* спрятаные заголовки */
-.vis-hiden {
-  margin: 0;
-  padding: 0;
-  visibility: hidden;
-}
-/* секции ===studio===*/
-.title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.text {
-  color: var(--primary-text-color);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-.team-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-.team-post {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-/* кнопки портфолио */
-.button {
-  margin-right: 8px;
-  margin-bottom: 50px;
-  border: var(--secondary-background-color);
-  border-radius: 4px;
-  text-align: center;
-  min-width: 73px;
-  display: inline-block;
-  padding: 6px 22px;
-  font-family: inherit;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-}
-.button.current {
-  background-color: var(--accent-color);
-  color: #ffffff;
+
+.site-nav,
+.header-info,
+.navigation,
+.main-nav.container {
+  display: flex;
 }
 
-/* ===portfolio===*/
-.port-title {
-  margin-top: 20px;
-  margin-left: 24px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+.nav-item:not(:last-child) {
+  margin-right: 50px;
 }
-.port-branch {
-  margin-bottom: 20px;
-  margin-left: 24px;
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
-}
-/* footer contacts  */
-.contacts-footer {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+.nav-item {
+  padding: 32px 0;
 }
 
-.contacts-footer.location {
-  color: #ffffff;
+.header-info {
+  margin-left: auto;
 }
-.contacts-footer {
-  color: rgba(255, 255, 255, 0.6);
+.nav-logo {
+  padding: 24px 0 25px 0;
+  margin-right: 93px;
 }
-.footer {
-  height: 252px;
-  background: #2f303a;
-}
+/* ============================================= */
+
 /* логотип студии */
 .logo {
   color: var(--accent-color);
@@ -210,30 +121,227 @@ img {
 .logo-footer {
   color: #ffffff;
 }
+/* =============================================== */
+
+/* страница ===студия=== */
+
+/* герой */
+.hero {
+  text-align: center;
+  background-color: #2f303a;
+  padding: 200px 0;
+}
+
+.hero-button {
+  border-radius: 4px;
+  border: transparent;
+  display: inline-block;
+  padding: 10px 32px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: #ffffff;
+  background: var(--accent-color);
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* ========================================== */
+
+/* заголовки секций студии */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+/* ========================================= */
+
+/* особенности */
+.features {
+  display: flex;
+  padding-top: 94px;
+}
+
+.title {
+  padding-right: 30px;
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.text {
+  margin-bottom: 94px;
+  padding-right: 30px;
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+/* ======================================== */
+
+/* чем мы занимаемся */
+.work {
+  display: flex;
+}
+
+.work-list {
+  margin-right: 30px;
+  padding-bottom: 94px;
+}
+/* ======================================== */
+
+/* команда */
+.section.team {
+  padding: 94px 0;
+  background-color: var(--secondary-background-color);
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team-unit {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.team-title {
+  padding-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.team-post {
+  text-align: center;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+/* ============================================ */
+
+/* страница ===портфолио===*/
+
+/* кнопки портфолио */
+.filter {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+}
+
+.button {
+  margin-right: 8px;
+  margin-bottom: 50px;
+  border: transparent;
+  border-radius: 4px;
+  text-align: center;
+  padding: 6px 22px;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.button.current {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+}
+/* ============================================= */
+
+/* галерея портфолио */
 .portfolio {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  margin-bottom: 160px;
+  padding-bottom: 94px;
 }
 
-.portfolio > .item {
+.item {
   border: 1px solid #eeeeee;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
-.filter {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.site-nav {
-  display: flex;
+
+.port-title {
+  margin-bottom: 4px;
+  padding-top: 20px;
+  padding-left: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
-.nav-item:not(:last-child) {
-  background-color: tomato;
-  margin-right: 50px;
+.port-branch {
+  padding-bottom: 20px;
+  padding-left: 24px;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
+/* ================================================ */
+
+/* ===футер=== */
+.footer {
+  padding: 60px 215px;
+  background: #2f303a;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.foot-logo {
+  margin-bottom: 20px;
+}
+
+/* footer contacts  */
+.contacts-footer {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.contacts-footer.location {
+  color: #ffffff;
+}
+.contacts-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+.contacts-footer:focus,
+.contacts-footer:hover {
+  color: var(--accent-color);
+}
+/* =================== end of css ================== */
