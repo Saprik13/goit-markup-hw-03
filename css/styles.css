@@ -217,7 +217,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -30px;
 }
 
 .team-unit {
@@ -315,8 +314,10 @@ img {
 
 /* ===футер=== */
 .footer {
-  padding: 60px 215px;
+  display: flex;
+  flex-wrap: wrap;
   background: #2f303a;
+  padding: 60px 0;
 }
 
 .footer-item:not(:last-child) {
