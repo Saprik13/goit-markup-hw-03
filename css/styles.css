@@ -247,6 +247,16 @@ img {
 /* страница ===портфолио===*/
 
 /* кнопки портфолио */
+.button.current:focus,
+.button.current:hover {
+  color: #ffffff;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+}
+
 .filter {
   display: flex;
   justify-content: center;
@@ -266,14 +276,16 @@ img {
   font-size: 16px;
   line-height: 1.6;
 }
+
+.button:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button.current {
   background-color: var(--accent-color);
   color: #ffffff;
 }
-.button:hover,
-.button:focus {
-  color: var(--accent-color);
-}
+
 /* ============================================= */
 
 /* галерея портфолио */
