@@ -248,14 +248,14 @@ img {
 /* страница ===портфолио===*/
 
 /* кнопки портфолио */
-.button.current:focus,
-.button.current:hover {
-  color: #ffffff;
-}
 
 .button:hover,
 .button:focus {
   color: var(--accent-color);
+}
+.button:active {
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 .filter {
@@ -280,11 +280,6 @@ img {
 
 .button:not(:last-child) {
   margin-right: 8px;
-}
-
-.button.current {
-  background-color: var(--accent-color);
-  color: #ffffff;
 }
 
 /* ============================================= */
